@@ -178,3 +178,7 @@ footer button {
 
     color: #fff;
 }
+
+input:invalid {
+  border: 2px solid red;
+}
