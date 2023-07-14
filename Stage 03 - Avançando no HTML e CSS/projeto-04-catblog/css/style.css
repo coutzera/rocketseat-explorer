@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: "Mulish", sans-serif;
+}
+
+html,
+body,
+input,
+main {
+  font-family: "Mulish", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  background: #065e7c;
+}
+
+#app {
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+  height: 100vh;
+}
+
+.container {
+  padding: 1.6rem 3.2rem;
+  width: min(122rem, 100%);
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 2.6rem;
+  font-weight: 700;
+}
+
+header form {
+  flex: 1;
+}
+
+.input-wrapper label {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.3);
+
+  border: none;
+  border-radius: 0.6rem;
+
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.input-wrapper input::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.avatar {
+  width: 4.2rem;
+  height: 4.2rem;
+
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+main {
+  background: #e1e1e6;
+  margin: 0;
+}
+
+main .container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+main .title h1 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 3.2rem;
+
+  font-family: "Mulish", sans-serif;
+}
+
+nav {
+  margin-top: 0.8rem;
+}
+
+nav ul {
+  list-style: none;
+  font-size: 1.8rem;
+  color: var(--color-base-gray-300);
+  display: flex;
+  gap: 1.2rem;
+}
+
+nav button {
+  border: none;
+  background-color: #065e7c;
+  border-radius: 50%;
+
+  height: 4rem;
+  width: 4rem;
+
+  font-size: 2rem;
+
+  color: white;
+}
+
+.banner {
+  width: 100%;
+  aspect-ratio: 16/9;
+
+  object-fit: cover;
+}
+
+.blog p {
+  margin-top: 3rem;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.article .list-article {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  margin-bottom: 4rem;
+}
+
+.item {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.item img {
+  width: 16rem;
+  aspect-ratio: 16/9;
+  border-radius: 0.5rem;
+}
+
+.item h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.item span {
+  font-size: 1.4rem;
+  font-weight: 400;
+  display: block;
+  margin-top: 1.6rem;
+}
+
+footer p {
+  text-align: center;
+  padding: 1rem;
+
+  font-weight: 600;
+
+  color: white;
+}
+
+@media (min-width: 760px) {
+  main {
+    padding-top: 4rem;
+  }
+
+  main .container {
+    flex-direction: row;
+    gap: 3.2rem;
+  }
+
+  .blog {
+    width: 80rem;
+  }
+
+  .banner {
+    border-radius: 0.5rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav{
+    margin: 0;
+    padding: 0;
+  }
+  .article {
+    width: 38.4rem;
+  }
+}
