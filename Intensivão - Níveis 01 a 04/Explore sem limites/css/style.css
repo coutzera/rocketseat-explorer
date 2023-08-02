@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Mulish", sans-serif;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+section:nth-child(even) {
+  background: linear-gradient(134deg, #343193 0%, #302c63 100%);
+}
+
+section:nth-child(odd) {
+  background: #f9f4fb;
+  align-items: center;
+}
+
+section#principal img.astronaut {
+  width: 36.4rem;
+  height: 37rem;
+  margin-bottom: 1.7rem;
+}
+
+h1 {
+  color: #b52184;
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: 900;
+  line-height: normal;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  color: #312d64;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 3.5rem;
+}
+
+section#principal button {
+  background: transparent;
+  border: none;
+  margin-bottom: 9.5rem;
+}
+
+section#cards {
+  gap: 5.2rem;
+  padding: 5.2rem 2.4rem;
+}
+
+.card {
+  padding: 2.4rem;
+  flex-direction: column;
+  gap: 3.2rem;
+
+  border-radius: 19.865px;
+  background: #fff;
+  box-shadow: 0px 3.3107693195343018px 13.243077278137207px 0px
+    rgba(0, 0, 0, 0.25);
+}
+
+.card img {
+  margin-bottom: 3.2rem;
+}
+
+.card h1 {
+  text-align: start;
+  margin-bottom: 1.6rem;
+}
+
+.card p {
+  text-align: justify;
+
+  color: #312d64;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: normal;
+}
+
+footer {
+  display: flex;
+  padding: 1.6rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+  background: linear-gradient(134deg, #343193 0%, #302c63 100%);
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: normal;
+}
