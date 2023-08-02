@@ -8,7 +8,10 @@
   font-size: 62.5%;
 }
 
-body {
+body,
+button,
+input,
+textarea {
   font-size: 1.6rem;
   font-family: "Mulish", sans-serif;
 }
@@ -93,6 +96,82 @@ section#cards {
   line-height: normal;
 }
 
+section#contact {
+  padding: 4.2rem;
+}
+
+section#contact form {
+  width: 100%;
+}
+
+section#contact fieldset {
+  border: none;
+}
+
+section#contact legend {
+  color: #b52184;
+  font-size: 3.2rem;
+  font-weight: 900;
+  line-height: normal;
+
+  margin-bottom: 4.2rem;
+}
+
+section#contact .input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.input {
+  position: relative;
+}
+
+section#contact input{
+  width: 34.8rem;
+  padding: 1.6rem 4.8rem !important;
+  align-items: center;
+}
+
+section#contact input,
+textarea {
+  width: 100%;
+  padding: 1.6rem;
+  border-radius: 1.6rem;
+  border: 1.5px solid #312d64;
+
+  color: #312d64;
+  font-weight: 600;
+  line-height: 140%; /* 22.4px */
+}
+
+section#contact .img {
+  position: absolute;
+  left: 1.6rem;
+  top: 1.6rem;
+  margin-right: 0.8rem;
+}
+
+section#contact .input button {
+  border-radius: 1.6rem;
+  background: linear-gradient(134deg, #343193 0%, #302c63 100%);
+
+  display: inline-flex;
+  height: 4rem;
+  padding: 1.6rem;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+
+  color: #fff;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem; /* 171.429% */
+  text-transform: capitalize;
+}
+
 footer {
   display: flex;
   padding: 1.6rem;
@@ -110,4 +189,22 @@ footer p {
   font-size: 1.6rem;
   font-weight: 600;
   line-height: normal;
+}
+
+
+@media (min-width: 900px) {
+    section#contact {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+    }
+
+    section#contact form {
+        width: 50%;
+
+    }
+
+    section#contact .balls {
+        width: 50%;
+    }
 }
