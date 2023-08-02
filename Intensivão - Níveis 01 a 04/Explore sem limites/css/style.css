@@ -62,7 +62,9 @@ section#principal button {
   margin-bottom: 9.5rem;
 }
 
-section#cards {
+section#cards .wrapper-cards {
+  display: flex;
+  flex-direction: column;
   gap: 5.2rem;
   padding: 5.2rem 2.4rem;
 }
@@ -127,7 +129,7 @@ section#contact .input-wrapper {
   position: relative;
 }
 
-section#contact input{
+section#contact input {
   width: 34.8rem;
   padding: 1.6rem 4.8rem !important;
   align-items: center;
@@ -191,21 +193,71 @@ footer p {
 }
 
 .balls {
-    display: none;
+  display: none;
 }
+
 @media (min-width: 900px) {
-    section#contact {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-    }
+  .padding {
+    margin: 0 11.2rem;
+  }
+  section {
+    display: flex;
+  }
 
-    section#contact form {
-        width: 50%;
+  section#principal {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
 
-    }
+  section#principal img.astronaut {
+    width: 72rem;
+    height: 73rem;
+    margin-bottom: 10.4rem;
+  }
 
-    section#contact .balls {
-        width: 50%;
-    }
+  section#principal .text {
+    width: 50%;
+    align-items: start;
+  }
+
+  section#principal .text h1 {
+    font-size: 5.8rem;
+    width: 100%;
+    text-align: left;
+  }
+
+  section#principal .text h3 {
+    font-size: 3.2rem;
+    text-align: left;
+  }
+
+  section#principal button {
+    margin-bottom: 9.5rem;
+  }
+
+  section#cards .wrapper-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 6rem;
+  }
+
+  section#contact {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  section#contact form {
+    width: 50%;
+  }
+
+  section#contact .balls {
+    /* width: clamp(20%, 50%, 100%); */
+    display: block;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 }
