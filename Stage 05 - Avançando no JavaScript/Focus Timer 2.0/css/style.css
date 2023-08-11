@@ -15,7 +15,7 @@
 }
 
 body {
-  background: var(--nature-background-color);
+  background: var(--back-color);
   display: flex;
   height: 100vh;
   justify-content: center;
