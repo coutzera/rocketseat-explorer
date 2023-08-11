@@ -9,13 +9,27 @@
   --back-color: #fff;
   --bg-card-color: #cbd5e1;
 
-  --nature-background-color: #f0fdf4;
+  --nature-background-color: #ecfdf5;
+  --nature-card-color: #86efac;
+  --nature-text-color: #4d7c0f;
+
+  --rain-background-color: #f8fafc;
+  --rain-card-color: #cbd5e1;
+  --rain-text-color: #334155;
+
+  --store-background-color: #fef2f2;
+  --store-card-color: #fca5a5;
+  --store-text-color: #b91c1c;
+
+  --fire-background-color: #fefce8;
+  --fire-card-color: #fcd34d;
+  --fire-text-color: #ea580c;
 
   font-size: clamp(40%, 1% + 2vw, 62.5%);
 }
 
 body {
-  background: var(--back-color);
+  background: var(--store-background-color);
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -74,6 +88,27 @@ button {
   cursor: pointer;
   font-size: 4.8rem;
 }
+
+.nature {
+  background: var(--nature-card-color);
+  color: var(--nature-text-color);
+}
+
+.rain {
+  background: var(--rain-card-color);
+  color: var(--rain-text-color);
+}
+
+.store {
+  background: var(--store-card-color);
+  color: var(--store-text-color);
+}
+
+.fire {
+  background: var(--fire-card-color);
+  color: var(--fire-text-color);
+}
+
 
 
 @media (max-width: 800px) {
