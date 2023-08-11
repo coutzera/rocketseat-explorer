@@ -7,44 +7,35 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-png" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script type="module" src="./src/main.js" defer></script>
   </head>
   <body>
     <div id="app">
       <div id="left">
         <section id="timer">
-          <span class="minutes">00</span>
+          <span id="minutes">00</span>
           <span>:</span>
-          <span class="seconds">00</span>
+          <span id="seconds">00</span>
         </section>
         <section id="controls">
-          <button class="controls">
-            <i class="ph-light ph-play-circle"></i>
-          </button>
-          <button class="controls">
-            <i class="ph-light ph-stop-circle"></i>
-          </button>
-          <button class="controls">
-            <i class="ph-light ph-plus-circle"></i>
-          </button>
-          <button class="controls">
-            <i class="ph-light ph-minus-circle"></i>
-          </button>
+          <button data-action="start" class="ph-light ph-play-circle"></button>
+          <button data-action="stop" class="ph-light ph-stop-circle"></button>
+          <button data-action="volup" class="ph-light ph-plus-circle"></button>
+          <button
+            data-action="voldown"
+            class="ph-light ph-minus-circle"
+          ></button>
         </section>
       </div>
       <div id="right">
         <section id="cards">
-          <button class="card nature">
-            <i class="ph-light ph-tree"></i>
-          </button>
-          <button class="card rain">
-            <i class="ph-light ph-cloud-rain"></i>
-          </button>
-          <button class="card store">
-            <i class="ph-light ph-storefront"></i>
-          </button>
-          <button class="card fire">
-            <i class="ph-light ph-fire"></i>
-          </button>
+          <button data-type="nature" class="ph-light ph-tree card" id="nature"></button>
+          <button data-type="rain" class="ph-light ph-cloud-rain card" id="rain"></button>
+          <button
+            data-type="store"
+            class="ph-light ph-storefront card" id="store"
+          ></button>
+          <button class="ph-light ph-fire card" data-type="fire" id="fire"></button>
         </section>
       </div>
     </div>

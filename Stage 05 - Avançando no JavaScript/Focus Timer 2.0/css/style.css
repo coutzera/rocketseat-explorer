@@ -6,7 +6,7 @@
 
 :root {
   --text-color: #323238;
-  --back-color: #fff;
+  --background-color: #fff;
   --bg-card-color: #cbd5e1;
 
   --nature-background-color: #ecfdf5;
@@ -14,8 +14,8 @@
   --nature-text-color: #4d7c0f;
 
   --rain-background-color: #f8fafc;
-  --rain-card-color: #cbd5e1;
-  --rain-text-color: #334155;
+  --rain-card-color: #334155;
+  --rain-text-color: #fff;
 
   --store-background-color: #fef2f2;
   --store-card-color: #fca5a5;
@@ -29,7 +29,7 @@
 }
 
 body {
-  background: var(--store-background-color);
+  background: var(--background-color);
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -56,10 +56,9 @@ body {
 
 #timer {
   display: flex;
-    font-size: 9.6rem;
+  font-size: 9.6rem;
   font-weight: bold;
   font-family: sans-serif;
-
 }
 
 #controls {
@@ -109,17 +108,15 @@ button {
   color: var(--fire-text-color);
 }
 
-
-
 @media (max-width: 800px) {
-    #app {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-    }
+  #app {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
 
-    section#cards {
-        gap: 1.6rem;
-      }
+  section#cards {
+    gap: 1.6rem;
+  }
 }
